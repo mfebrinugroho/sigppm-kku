@@ -105,5 +105,11 @@
       color: #012970;
       transition: 0.3s;
     }
+
+    .kotak{
+      width:150px;
+      height:150px;
+      border-radius: 5px;
+}
   </style>
 </head>

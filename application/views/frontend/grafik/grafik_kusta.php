@@ -57,12 +57,24 @@
                                 <h2 class="entry-title text-center">GRAFIK PREVALENCE RATE DI KABUPATEN KAYONG UTARA <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
                                 <canvas id="pr" height="100"></canvas>
+                                <div class="mt-3">
+                                    <p><small>Keterangan :</small></p>
+                                    <ul>
+                                        <li style="list-style-type: none;"><small>PR : Prevalence Rate</small></li>
+                                        </ul>
+                                </div>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK CASE DETECTION RATE DI KABUPATEN KAYONG UTARA <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
                                 <canvas id="cdr" height="100"></canvas>
+                                <div class="mt-3">
+                                    <p><small>Keterangan :</small></p>
+                                    <ul>
+                                        <li style="list-style-type: none;"><small>CDR : Case Detection Rate / Angka penemuan kasus</small></li>
+                                        </ul>
+                                </div>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
@@ -75,12 +87,26 @@
                                 <h2 class="entry-title text-center">GRAFIK KASUS KUSTA TERDAFTAR BERDASARKAN UMUR DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
                                 <canvas id="usiaK" height="100"></canvas>
+                                <div class="mt-3">
+                                    <p><small>Keterangan :</small></p>
+                                    <ul>
+                                        <li style="list-style-type: none;"><small>PB : Pausi Basiler (kusta kering)</small></li>
+                                        <li style="list-style-type: none;"><small>MB : Multi Basiler (kusta basah)</small></li>
+                                        </ul>
+                                </div>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KASUS KUSTA TERDAFTAR YANG SEMBUH DAN CACAT MENURUT KECAMATAN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
                                 <canvas id="sembuh" height="100"></canvas>
+                                <div class="mt-3">
+                                    <p><small>Keterangan :</small></p>
+                                    <ul>
+                                        <li style="list-style-type: none;"><small>Sembuh : Penderita positif kusta yang telah sembuh tanpa mengalami kecacatan</small></li>
+                                        <li style="list-style-type: none;"><small>Cacat : Penderita positif kusta yang mengalami kecacatan</small></li>
+                                        </ul>
+                                </div>
                             </article><!-- End blog entry -->
 
                             <article class="entry">

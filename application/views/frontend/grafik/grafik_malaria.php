@@ -57,12 +57,26 @@
                                 <h2 class="entry-title text-center">GRAFIK ANNUAL MALARIA INCIDENCE (AMI) & ANNUAL PARACITE INCIDENCE (API) DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioM['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
                                 <canvas id="api" height="100"></canvas>
+                                <div class="mt-3">
+                                    <p><small>Keterangan :</small></p>
+                                    <ul>
+                                        <li style="list-style-type: none;"><small>API : Annual Parasite Incidence</small></li>
+                                        <li style="list-style-type: none;"><small>AMI : Annual Malaria Incidence</small></li>
+                                        </ul>
+                                </div>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KONFIRMASI LAB MENURUT KECAMATAN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioM['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
                                 <canvas id="sd" height="100"></canvas>
+                                <div class="mt-3">
+                                    <p><small>Keterangan :</small></p>
+                                    <ul>
+                                        <li style="list-style-type: none;"><small>Mikroskop : Jumlah penderita malaria positif yang diperiksa dengan metode menggunakan mikroskop</small></li>
+                                        <li style="list-style-type: none;"><small>RDT : Jumlah penderita malaria positif yang diperiksa dengan metode menggunakan alat seperti kertas lakmus.</small></li>
+                                        </ul>
+                                </div>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
@@ -72,11 +86,11 @@
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
-                                        <li style="list-style-type: none;"><small>Pf : Plasmodium falciparum</small></li>
-                                        <li style="list-style-type: none;"><small>Pv : Plasmodium vivax</small></li>
-                                        <li style="list-style-type: none;"><small>Pm : Plasmodium malariae</small></li>
-                                        <li style="list-style-type: none;"><small>Po : Plasmodium ovale</small></li>
-                                        <li style="list-style-type: none;"><small>Mix : kombinasi dua jenis malaria dalam tubuh satu pasien</small></li>
+                                        <li style="list-style-type: none;"><small>Pf : Jumlah penderita malaria yang disebabkan Plasmodium falciparum</small></li>
+                                        <li style="list-style-type: none;"><small>Pv : Jumlah penderita malaria yang disebabkan Plasmodium vivax</small></li>
+                                        <li style="list-style-type: none;"><small>Pm : Jumlah penderita malaria yang disebabkan Plasmodium malariae</small></li>
+                                        <li style="list-style-type: none;"><small>Po : Jumlah penderita malaria yang disebabkan Plasmodium ovale</small></li>
+                                        <li style="list-style-type: none;"><small>Mix : Jumlah penderita malaria yang disebabkan kombinasi dua jenis malaria dalam tubuh satu pasien</small></li>
                                     </ul>
                                 </div>
                             </article><!-- End blog entry -->

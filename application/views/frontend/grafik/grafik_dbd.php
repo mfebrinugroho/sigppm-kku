@@ -57,6 +57,12 @@
                                 <h2 class="entry-title text-center">GRAFIK INCIDENCE RATE DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioD['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
                                 <canvas id="ir" height="100"></canvas>
+                                <div class="mt-3">
+                                    <p><small>Keterangan :</small></p>
+                                    <ul>
+                                        <li style="list-style-type: none;"><small>IR : Incidence Rate</small></li>
+                                        </ul>
+                                </div>
                             </article><!-- End blog entry -->
 
                             <article class="entry">

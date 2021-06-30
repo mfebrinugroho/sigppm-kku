@@ -43,8 +43,8 @@
                             dapat digunakan pada kasus penyakit kronis menular yang berjangka panjang.</p>
                             <p>Legenda :</p>
                             <ul>
-                                <li>Belum Eliminasi PR > 1</li>
-                                <li>Sudah Eliminasi PR < 1</li>
+                                <li><span class="kotak" style="background:green; color:green;">kot</span> PR < 1 = Sudah Eliminasi</li>
+                                <li><span class="kotak" style="background:red; color:red;">kot</span> PR > 1 = Belum Eliminasi</li>
                             </ul>
                         </div>
                     <?php endif; ?>

@@ -43,9 +43,9 @@
                             dalam kurun waktu tertentu setiap/per 1000 orang penduduk</p>
                             <p>Legenda :</p>
                             <ul>
-                                <li>LCI (Low Case Incidence) API < 1 : Hijau</li>
-                                <li>MCI (Moderate Case Incidence) API 1 - < 5 : Kuning</li>
-                                <li>HCI (High Case Incidence) API > 5 : Merah</li>
+                                <li><span class="kotak" style="background:green; color:green;">kot</span> API < 1 = LCI (Low Case Incidence)</li>
+                                <li><span class="kotak" style="background:yellow; color:yellow;">kot</span> API 1 - < 5 = MCI (Moderate Case Incidence)</li>
+                                <li><span class="kotak" style="background:red; color:red;">kot</span> API > 5 = HCI (High Case Incidence)</li>
                             </ul>
                         </div>
                     <?php endif; ?>

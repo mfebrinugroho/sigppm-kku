@@ -43,10 +43,10 @@
                             menular berjangka pendek.</p>
                             <p>Legenda :</p>
                             <ul>
-                                <li>Rendah IR < 35</li>
-                                <li>Sedang IR 35 – 55</li>
-                                <li>Tinggi IR 55 - 75</li>
-                                <li>Sangat Tinggi IR > 75</li>
+                                <li><span class="kotak" style="background:green; color:green;">kot</span> IR < 35 = Rendah</li>
+                                <li><span class="kotak" style="background:yellow; color:yellow;">kot</span> IR 35 – 55 = Sedang</li>
+                                <li><span class="kotak" style="background:orange; color:orange;">kot</span> IR 55 - 75 = Tinggi</li>
+                                <li><span class="kotak" style="background:red; color:red;">kot</span> IR > 75 = Sangat Tinggi</li>
                             </ul>
                         </div>
                     <?php endif; ?>
