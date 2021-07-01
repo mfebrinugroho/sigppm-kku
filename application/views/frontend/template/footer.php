@@ -101,7 +101,7 @@
 <?php elseif ($this->uri->segment(2) == 'pemetaan_dbd') : ?>
     <?php include 'map/map_dbd.php'; ?>
 <?php elseif ($this->uri->segment(2) == 'pemetaan_kusta') : ?>
-    <?php include 'map/map_Kusta.php'; ?>
+    <?php include 'map/map_kusta.php'; ?>
 <?php endif; ?>
 <!-- End Leaflet -->
 

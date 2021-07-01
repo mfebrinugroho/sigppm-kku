@@ -90,7 +90,7 @@ class User extends CI_Controller
             $this->load->view('backend/template/head', $data);
             $this->load->view('backend/template/sidebar');
             $this->load->view('backend/template/topbar', $data);
-            $this->load->view('backend/admin/user/v_tambahuser', $data);
+            $this->load->view('backend/admin/user/v_tambahUser', $data);
             $this->load->view('backend/template/footer');
         } else {
             $upload_gambar = $_FILES['gambar']['name'];
@@ -143,7 +143,7 @@ class User extends CI_Controller
             $this->load->view('backend/template/head', $data);
             $this->load->view('backend/template/sidebar');
             $this->load->view('backend/template/topbar', $data);
-            $this->load->view('backend/admin/user/v_ubahuser', $data);
+            $this->load->view('backend/admin/user/v_ubahUser', $data);
             $this->load->view('backend/template/footer');
         } else {
             $upload_gambar = $_FILES['gambar']['name'];
