@@ -37,7 +37,7 @@
                     borderWidth: 1
                 },
                 {
-                    label: 'Cacat Tk2',
+                    label: 'Cacat',
                     data: [
                         <?php foreach ($kusta as $d) {
                             echo "'" . $d['cacat'] . "',";

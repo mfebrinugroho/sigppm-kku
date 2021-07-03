@@ -1,5 +1,5 @@
 <footer class="footer">
-    © 2018 Annex by Mannatthemes.
+    &copy;2021 Muhammad Febri Nugroho by Mannatthemes.
 </footer>
 
 </div>

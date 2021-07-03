@@ -37,9 +37,6 @@
                     font: {
                         weight: 'bold',
                         size: '10'
-                    },
-                    formatter: (value) => {
-                        return value + ' Penduduk';
                     }
                 }
             }

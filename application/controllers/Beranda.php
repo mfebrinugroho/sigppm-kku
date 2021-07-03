@@ -167,10 +167,7 @@ class Beranda extends CI_Controller
 
     public function penyakit()
     {
-        $this->load->model('M_penyakit');
-
         $data['judul'] = 'Penyakit Menular';
-        $data['penyakit'] = $this->M_penyakit->ambilSemuaPenyakit();
 
         $this->load->view('frontend/template/head');
         $this->load->view('frontend/template/header');

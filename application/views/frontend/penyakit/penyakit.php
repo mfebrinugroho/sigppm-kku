@@ -51,33 +51,6 @@
 
             </div><!-- End Feature Tabs -->
 
-            <!-- Feature Tabs -->
-            <!-- <div class="row feture-tabs" data-aos="fade-up">
-                <div class="col-lg-12">
-                    <ul class="nav nav-pills mb-3">
-                        <?php foreach ($penyakit as $pyk) : ?>
-                            <li>
-                                <a class="nav-link" data-bs-toggle="pill" href="#tab<?= $pyk['id'] ?>"><?= $pyk['penyakit'] ?></a>
-                            </li>
-                        <?php endforeach; ?>
-
-                    </ul>
-                    <div class="tab-content">
-                        <?php foreach ($penyakit as $pyk) : ?>
-
-                            <div class="tab-pane fade show" id="tab<?= $pyk['id'] ?>">
-                                <p><?= $pyk['keterangan'] ?></p>
-
-                            </div>
-                        <?php endforeach; ?>
-
-                    </div>
-
-                </div>
-            </div> -->
-            <!-- End Feature Tabs -->
-
-
 
         </div>
 

@@ -56,7 +56,7 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK PREVALENCE RATE DI KABUPATEN KAYONG UTARA <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="pr" height="100"></canvas>
+                                <canvas id="pr" style="height:40vh; width:80vw"></canvas>
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
@@ -68,7 +68,7 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK CASE DETECTION RATE DI KABUPATEN KAYONG UTARA <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="cdr" height="100"></canvas>
+                                <canvas id="cdr" style="height:40vh; width:80vw"></canvas>
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
@@ -80,13 +80,13 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KASUS KUSTA TERDAFTAR BERDASARKAN TIPE KUSTA DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="tipeKusta" height="100"></canvas>
+                                <canvas id="tipeKusta" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KASUS KUSTA TERDAFTAR BERDASARKAN UMUR DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="usiaK" height="100"></canvas>
+                                <canvas id="usiaK" style="height:40vh; width:80vw"></canvas>
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
@@ -99,7 +99,7 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KASUS KUSTA TERDAFTAR YANG SEMBUH DAN CACAT MENURUT KECAMATAN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="sembuh" height="100"></canvas>
+                                <canvas id="sembuh" style="height:40vh; width:80vw"></canvas>
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
@@ -112,7 +112,7 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK PERSENTASE KASUS KUSTA TERDAFTAR BERDASARKAN JENIS KELAMIN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioK['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="rasioKusta" height="100"></canvas>
+                                <canvas id="rasioKusta" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                         </div><!-- End blog entries list -->

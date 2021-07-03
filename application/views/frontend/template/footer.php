@@ -61,7 +61,7 @@
 
     <div class="container">
         <div class="copyright">
-            Copyright &copy;2021 <strong><span>Averno</span></strong>
+            Copyright &copy;2021 <strong><span>Muhammad Febri Nugroho</span></strong>
         </div>
         <div class="credits">
             <!-- All the links in the footer should remain intact. -->

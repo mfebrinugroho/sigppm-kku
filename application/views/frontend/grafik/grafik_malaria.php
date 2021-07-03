@@ -56,7 +56,7 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK ANNUAL MALARIA INCIDENCE (AMI) & ANNUAL PARACITE INCIDENCE (API) DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioM['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="api" height="100"></canvas>
+                                <canvas id="api" style="height:40vh; width:80vw"></canvas>
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
@@ -69,7 +69,7 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KONFIRMASI LAB MENURUT KECAMATAN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioM['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="sd" height="100"></canvas>
+                                <canvas id="sd" style="height:40vh; width:80vw"></canvas>
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
@@ -82,7 +82,7 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK SEDIAAN DARAH POSITIF MENURUT KECAMATAN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioM['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="parasit" height="100"></canvas>
+                                <canvas id="parasit" style="height:40vh; width:80vw"></canvas>
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
@@ -98,19 +98,19 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KASUS SEDIAAN DARAH POSITIF BERDASARKAN UMUR DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioM['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="usiaM" height="100"></canvas>
+                                <canvas id="usiaM" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KASUS MALARIA YANG HIDUP DAN MENINGGAL MENURUT KECAMATAN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioM['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="meninggal" height="100"></canvas>
+                                <canvas id="meninggal" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK PERSENTASE KASUS MALARIA BERDASARKAN JENIS KELAMIN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioM['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="rasioMalaria" height="100"></canvas>
+                                <canvas id="rasioMalaria" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                         </div><!-- End blog entries list -->

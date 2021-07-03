@@ -88,7 +88,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Annual Malaria Incidence (AMI) & Annual Paracite Incidence (API)</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="api" height="100"></canvas>
+                                <canvas id="api" style="height:40vh; width:80vw"></canvas>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Pemeriksaan Lab</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="sd" height="100"></canvas>
+                                <canvas id="sd" style="height:40vh; width:80vw"></canvas>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Parasit Kasus Malaria</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="parasit" height="100"></canvas>
+                                <canvas id="parasit" style="height:40vh; width:80vw"></canvas>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Kasus Malaria Positif Berdasarkan Umur</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="usiaM" height="100"></canvas>
+                                <canvas id="usiaM" style="height:40vh; width:80vw"></canvas>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Jumlah Kasus Malaria yang Hidup dan Meninggal</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="meninggal" height="100"></canvas>
+                                <canvas id="meninggal" style="height:40vh; width:80vw"></canvas>
                             </div>
                         </div>
                     </div>
@@ -148,13 +148,13 @@
                 </div> <!-- end row -->
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="card m-b-30">
                             <div class="card-body">
 
                                 <h4 class="mt-0 header-title">Grafik Perbandingan Kasus Malaria Berdasarkan Jenis Kelamin</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="rasioMalaria" height="200"></canvas>
+                                <canvas id="rasioMalaria" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>

@@ -88,7 +88,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik IR Kasus DBD</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="ir" height="100"></canvas>
+                                <canvas id="ir" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Jumlah Kasus DBD Berdasarkan Bulan</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="waktu" height="100"></canvas>
+                                <canvas id="waktu" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Jumlah Kasus DBD yang Hidup dan Meninggal</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="meninggal" height="100"></canvas>
+                                <canvas id="meninggal" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Jumlah Kasus DBD Berdasarkan Umur</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="usiaD" height="100"></canvas>
+                                <canvas id="usiaD" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>
@@ -135,12 +135,12 @@
                 </div> <!-- end row -->
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="card m-b-30">
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Perbandingan Kasus DBD Berdasarkan Jenis Kelamin</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="rasioDbd" height="200"></canvas>
+                                <canvas id="rasioDbd" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>

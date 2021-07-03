@@ -56,7 +56,7 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK INCIDENCE RATE DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioD['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="ir" height="100"></canvas>
+                                <canvas id="ir" style="height:40vh; width:80vw"></canvas>
                                 <div class="mt-3">
                                     <p><small>Keterangan :</small></p>
                                     <ul>
@@ -68,25 +68,25 @@
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK JUMLAH KASUS DBD BERDASARKAN BULAN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioD['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="waktu" height="100"></canvas>
+                                <canvas id="waktu" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KASUS DBD YANG HIDUP DAN MENINGGAL MENURUT KECAMATAN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioD['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="meninggal" height="100"></canvas>
+                                <canvas id="meninggal" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK KASUS DBD BERDASARKAN UMUR DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioD['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="usiaD" height="100"></canvas>
+                                <canvas id="usiaD" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                             <article class="entry">
                                 <h2 class="entry-title text-center">GRAFIK PERSENTASE KASUS DBD BERDASARKAN JENIS KELAMIN DI KABUPATEN KAYONG UTARA TAHUN <?= $rasioD['tahun'] ?></h2>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="rasioDbd" height="100"></canvas>
+                                <canvas id="rasioDbd" style="height:40vh; width:80vw"></canvas>
                             </article><!-- End blog entry -->
 
                         </div><!-- End blog entries list -->

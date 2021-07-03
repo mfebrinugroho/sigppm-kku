@@ -138,7 +138,7 @@
                                 <h4 class="mt-0 header-title">Grafik Jumlah Penduduk</h4>
                                 <div class="dropdown-divider mb-3"></div>
 
-                                <canvas id="myChart" width="200" height="70"></canvas>
+                                <canvas id="myChart" style="height:40vh; width:80vw"></canvas>
 
 
                             </div>

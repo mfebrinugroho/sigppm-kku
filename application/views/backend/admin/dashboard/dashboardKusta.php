@@ -92,7 +92,7 @@
 
                                 <h4 class="mt-0 header-title">Grafik PR Kasus Kusta</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="pr" height="100"></canvas>
+                                <canvas id="pr" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>
@@ -106,7 +106,7 @@
 
                                 <h4 class="mt-0 header-title">Grafik CDR Kasus Kusta</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="cdr" height="100"></canvas>
+                                <canvas id="cdr" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>
@@ -120,7 +120,7 @@
 
                                 <h4 class="mt-0 header-title">Grafik Kasus Kusta Berdasarkan Tipe Kusta</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="tipeKusta" height="100"></canvas>
+                                <canvas id="tipeKusta" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Kasus Kusta Terdaftar Berdasarkan Umur</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="usiaK" height="100"></canvas>
+                                <canvas id="usiaK" style="height:40vh; width:80vw"></canvas>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                             <div class="card-body">
                                 <h4 class="mt-0 header-title">Grafik Jumlah Kesembuhan Penderita Kusta</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="sembuh" height="100"></canvas>
+                                <canvas id="sembuh" style="height:40vh; width:80vw"></canvas>
                             </div>
                         </div>
                     </div>
@@ -154,13 +154,13 @@
                 </div> <!-- end row -->
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="card m-b-30">
                             <div class="card-body">
 
                                 <h4 class="mt-0 header-title">Grafik Perbandingan Kasus Kusta Berdasarkan Jenis Kelamin</h4>
                                 <div class="dropdown-divider mb-3"></div>
-                                <canvas id="rasioKusta" height="200"></canvas>
+                                <canvas id="rasioKusta" style="height:40vh; width:80vw"></canvas>
 
                             </div>
                         </div>
