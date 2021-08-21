@@ -72,7 +72,15 @@
                                     </div>
                                     <div class=" col-9 align-self-center text-center">
                                         <div class="m-l-10">
-                                            <h5 class="mt-0 round-inner text-danger"><?= $rasioM['mal_positif'] ?></h5>
+                                            <h5 class="mt-0 round-inner text-danger">
+                                                <?php
+                                                if ($rasioM['mal_positif']) {
+                                                    echo $rasioM['mal_positif'];
+                                                } else {
+                                                    echo "0";
+                                                }
+                                                ?>
+                                            </h5>
                                             <p class="mb-0 text-muted">Kasus Malaria di Tahun <?= $rasioM['tahun'] ?></p>
                                             <a href="<?= site_url('dashboard/dash_malaria'); ?>"><span>Lebih Lanjut</span> <i class="mdi mdi-arrow-right mt-3"></i></a>
                                         </div>
@@ -94,7 +102,15 @@
                                     </div>
                                     <div class="col-9 text-center align-self-center">
                                         <div class="m-l-10 ">
-                                            <h5 class="mt-0 round-inner text-danger"><?= $rasioD['jumlah_kasus'] ?></h5>
+                                            <h5 class="mt-0 round-inner text-danger">
+                                                <?php
+                                                if ($rasioD['jumlah_kasus']) {
+                                                    echo $rasioD['jumlah_kasus'];
+                                                } else {
+                                                    echo "0";
+                                                }
+                                                ?>
+                                            </h5>
                                             <p class="mb-0 text-muted">Kasus DBD di Tahun <?= $rasioD['tahun'] ?></p>
                                             <a href="<?= site_url('dashboard/dash_dbd'); ?>"><span>Lebih Lanjut</span> <i class="mdi mdi-arrow-right mt-3"></i></a>
                                         </div>

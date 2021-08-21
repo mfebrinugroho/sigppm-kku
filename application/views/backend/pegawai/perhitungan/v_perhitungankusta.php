@@ -86,12 +86,12 @@
                                                 $no = 1;
                                                 foreach ($kasus as $kps) : ?>
                                                     <?php
-                                                    $jumlahPenduduk = $kps['jumlahPenduduk'];
-                                                    $total = $kps['pb'] + $kps['mb'];
-                                                    $kasus_baru = $kps['kasus_baru'];
+                                                    $jumlahPenduduk = $kps['jumlahPenduduk']; // Jumlah Penduduk
+                                                    $total = $kps['pb'] + $kps['mb']; // Total Penderita Positif Kusta
+                                                    $kasus_baru = $kps['kasus_baru']; // Total penderita positif kusta yang ditemukan
 
-                                                    $pr = ($total / $jumlahPenduduk) * 10000;
-                                                    $cdr = ($kasus_baru / $jumlahPenduduk) * 100000;
+                                                    $pr = ($total / $jumlahPenduduk) * 10000; // Rumus perhitungan Prevalence Rate
+                                                    $cdr = ($kasus_baru / $jumlahPenduduk) * 100000; // Rumus perhitungan Case Detection Rate (CDR)
                                                     ?>
                                                     <tr>
                                                         <td><?= $no++; ?></td>

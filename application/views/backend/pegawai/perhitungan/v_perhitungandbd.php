@@ -82,12 +82,13 @@
                                                 $no = 1;
                                                 foreach ($kasus as $kps) : ?>
                                                     <?php
-                                                    $jumlahPenduduk = $kps['jumlahPenduduk'];
-                                                    $total_kasus = $kps['jumlah_kasus'];
-                                                    $meninggal = $kps['dbd_meninggal'];
+                                                    $jumlahPenduduk = $kps['jumlahPenduduk']; // Jumlah Penduduk
+                                                    $total_kasus = $kps['jumlah_kasus']; // Total Penderita Positif DBD
+                                                    $meninggal = $kps['dbd_meninggal']; // Total Penderita Positif DBD yang meninggal
 
-                                                    $ir = $total_kasus / $jumlahPenduduk * 100000;
+                                                    $ir = $total_kasus / $jumlahPenduduk * 100000; // Rumus perhitungan Incidence Rate
 
+                                                    // Rumus perhitungan Case Fatality Rate (CFR)
                                                     if ($meninggal != 0) {
                                                         $cfr = round($meninggal / $total_kasus * 100, 2);
                                                     } else {

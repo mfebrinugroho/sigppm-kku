@@ -42,8 +42,8 @@
 
     info.update = function(props) {
         this._div.innerHTML = '<h4>Annual Parasite Incidence</h4>' + (props ?
-            '<b>' + props.KECAMATAN + '</b><br/><br/> Kasus Positif = ' + POSITIF[props.KECAMATAN] +
-            '<br/> API = ' + PERHITUNGAN[props.KECAMATAN] :
+            '<b>' + props.KECAMATAN + '</b><br/><br/> Kasus Positif = ' + POSITIF[props.KECAMATAN] + ' Jiwa' +
+            '<br/> API = ' + PERHITUNGAN[props.KECAMATAN] + ' / 1.000 Penduduk':
             'Arahkan kursor untuk melihat');
     };
 

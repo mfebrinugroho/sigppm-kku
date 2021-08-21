@@ -6,7 +6,7 @@
     </a>
 </li>
 
-<li class="menu-title">MASTER DATA</li>
+<li class="menu-title">KELOLA DATA</li>
 <li>
     <a href="<?= site_url('kecamatan') ?>" class="waves-effect">
         <i class="mdi mdi-database"></i>

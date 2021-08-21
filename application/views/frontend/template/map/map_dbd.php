@@ -42,8 +42,8 @@
 
     info.update = function(props) {
         this._div.innerHTML = '<h4>Incidence Rate</h4>' + (props ?
-            '<b>' + props.KECAMATAN + '</b><br/><br/> Kasus Positif = ' + POSITIF[props.KECAMATAN] +
-            '<br/> IR ' + PERHITUNGAN[props.KECAMATAN] :
+            '<b>' + props.KECAMATAN + '</b><br/><br/> Kasus Positif = ' + POSITIF[props.KECAMATAN] + ' Jiwa' +
+            '<br/> IR ' + PERHITUNGAN[props.KECAMATAN] + ' / 100.000 Penduduk' :
             'Arahkan kursor untuk melihat');
     };
 

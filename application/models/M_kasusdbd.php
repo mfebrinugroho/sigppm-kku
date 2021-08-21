@@ -119,7 +119,7 @@ class M_kasusdbd extends CI_model
             ->join('kecamatan', 'jumlah_penduduk.idKecamatan = kecamatan.id')
             ->join('penyakit', 'kasus_dbd.idPenyakit = penyakit.id')
             ->where('tahun', $keyword)
-            ->order_by('jumlah_penduduk.tahun, penyakit.penyakit, kecamatan.nama')
+            ->order_by('jumlah_penduduk.tahun, kecamatan.nama')
             ->get();
         return $query;
     }

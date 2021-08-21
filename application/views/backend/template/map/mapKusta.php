@@ -1,4 +1,5 @@
 <script>
+    // Menghitung PR
     <?php
     foreach ($pemetaan as $pmt) {
         $jumlahPenduduk = $pmt['jumlahPenduduk'];
@@ -23,7 +24,7 @@
     map.addLayer(LayerKita);
     // End Peta Dasar
 
-    // control that shows state info on hover
+    // Menampilkan informasi pada peta
     var info = L.control();
 
     info.onAdd = function(map) {
@@ -39,9 +40,8 @@
     };
 
     info.addTo(map);
-    // info panel
 
-    // get color depending on population density value
+    // Memberi warna legenda sesuai hasil perhitungan
     function getColor(d) {
         return d > 1 ? '#FF0000' :
             '#008000';
@@ -75,8 +75,7 @@
         info.update(layer.feature.properties);
     }
 
-    // var geojson;
-
+// pengaturan geojson
     function resetHighlight(e) {
         var layer = e.target;
 
@@ -101,6 +100,7 @@
         });
     }
 
+    // legenda
     var legend = L.control({
         position: 'bottomright'
     });

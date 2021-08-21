@@ -82,12 +82,12 @@
                                                 $no = 1;
                                                 foreach ($kasus as $kps) : ?>
                                                     <?php
-                                                    $jumlahPenduduk = $kps['jumlahPenduduk'];
-                                                    $positif = $kps['malaria_positif'];
-                                                    $klinis = $kps['malaria_klinis'];
+                                                    $jumlahPenduduk = $kps['jumlahPenduduk']; // Jumlah Penduduk
+                                                    $positif = $kps['malaria_positif']; // Jumlah penderita positif malaria
+                                                    $klinis = $kps['malaria_klinis']; // Jumlah penderita terduga malaria
 
-                                                    $api = ($positif / $jumlahPenduduk) * 1000;
-                                                    $ami = ($klinis / $jumlahPenduduk) * 1000;
+                                                    $api = ($positif / $jumlahPenduduk) * 1000; // Rumus perhitungan Annual Paracite Incidence
+                                                    $ami = ($klinis / $jumlahPenduduk) * 1000; // Rumus perhitungan Annual Malaria Incidence
                                                     ?>
                                                     <tr>
                                                         <td><?= $no++; ?></td>
