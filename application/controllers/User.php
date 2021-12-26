@@ -45,7 +45,7 @@ class User extends CI_Controller
     {
         $data['judul'] = 'Tambah Data User';
         $data['user'] = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-        $data['levelUser'] = ['Admin', 'Pegawai'];
+        $data['levelUser'] = ['Pegawai'];
 
         $this->form_validation->set_rules(
             'nama',
@@ -123,7 +123,7 @@ class User extends CI_Controller
         $data['judul'] = 'Ubah Data User';
         $data['user'] = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['users'] = $this->M_user->ambilIdUser($idUser);
-        $data['levelUser'] = ['Admin', 'Pegawai'];
+        $data['levelUser'] = ['Pegawai'];
         $data['status'] = ['Aktif', 'Tidak Aktif'];
 
         $this->form_validation->set_rules(

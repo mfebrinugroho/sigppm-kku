@@ -31,7 +31,7 @@
 
                                             <div class="offset-1 col-sm-5">
                                                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="mdi mdi-file-excel"></i> Cetak
+                                                    Download Laporan
                                                 </button>
                                                 <div class="dropdown-menu">
                                                     <?php foreach ($tahun as $thn) : ?>

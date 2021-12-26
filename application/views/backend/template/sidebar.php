@@ -20,7 +20,6 @@
                  <ul>
                      <?php if ($this->session->userdata('levelUser') == 'Admin') : ?>
                          <?php include 'sb_admin.php'; ?>
-                         <?php include 'sb_user.php'; ?>
                      <?php else : ?>
                          <div class="dropdown-divider"></div>
                          <li>

@@ -13,6 +13,8 @@ class Perhitungan extends CI_Controller
         parent::__construct();
         if (!$this->session->userdata('username')) {
             redirect('auth');
+        } elseif ($this->session->userdata('levelUser') !== 'Pegawai') {
+            redirect('auth/blokir');
         }
     }
 

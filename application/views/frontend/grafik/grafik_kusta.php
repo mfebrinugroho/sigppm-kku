@@ -12,7 +12,7 @@
                 <div class="row mb-3">
                     <div class="offset-1 col-sm-3 mt-2">
                         <button type="button" class="btn btn-primary dropdown-toggle" id="dropTahun" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-file-excel"></i> Cetak
+                            <i class="fas fa-file-excel"></i> Download Laporan
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropTahun">
                             <?php foreach ($tahun as $thn) : ?>

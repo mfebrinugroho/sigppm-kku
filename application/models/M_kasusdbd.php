@@ -163,6 +163,18 @@ class M_kasusdbd extends CI_model
         SUM(dbd1L + dbd1P + dbd14L + dbd14P + dbd59L + dbd59P + dbd1014L + dbd1014P + 
         dbd1519L + dbd1519P + dbd2044L + dbd2044P + dbd45L + dbd45P) as jumlah_kasus,
 
+        SUM(dbd1L + dbd14L + dbd59L + dbd1014L + dbd1519L + dbd2044L + dbd45L) as totalL,
+
+        SUM(dbd1P + dbd14P + dbd59P + dbd1014P + dbd1519P + dbd2044P + dbd45P) as totalP,
+
+        SUM(dbd1L + dbd1P) as dbd1,
+        SUM(dbd14L + dbd14P) as dbd14,
+        SUM(dbd59L + dbd59P) as dbd59,
+        SUM(dbd1014L + dbd1014P) as dbd1014,
+        SUM(dbd1519L + dbd1519P) as dbd1519,
+        SUM(dbd2044L + dbd2044P) as dbd2044,
+        SUM(dbd45L + dbd45P) as dbd45,
+
         SUM(dbd_meninggal) as dbd_meninggal')
             ->from('kasus_dbd')
             ->group_by('tahun, nama')
@@ -181,6 +193,18 @@ class M_kasusdbd extends CI_model
         $query = $this->db->select('bulan, penyakit, tahun, nama, kasus_dbd.id, jumlah_penduduk.jumlah as jumlahPenduduk,
         SUM(dbd1L + dbd1P + dbd14L + dbd14P + dbd59L + dbd59P + dbd1014L + dbd1014P + 
         dbd1519L + dbd1519P + dbd2044L + dbd2044P + dbd45L + dbd45P) as jumlah_kasus,
+
+        SUM(dbd1L + dbd14L + dbd59L + dbd1014L + dbd1519L + dbd2044L + dbd45L) as totalL,
+
+        SUM(dbd1P + dbd14P + dbd59P + dbd1014P + dbd1519P + dbd2044P + dbd45P) as totalP,
+
+        SUM(dbd1L + dbd1P) as dbd1,
+        SUM(dbd14L + dbd14P) as dbd14,
+        SUM(dbd59L + dbd59P) as dbd59,
+        SUM(dbd1014L + dbd1014P) as dbd1014,
+        SUM(dbd1519L + dbd1519P) as dbd1519,
+        SUM(dbd2044L + dbd2044P) as dbd2044,
+        SUM(dbd45L + dbd45P) as dbd45,
 
         SUM(dbd_meninggal) as dbd_meninggal')
             ->from('kasus_dbd')

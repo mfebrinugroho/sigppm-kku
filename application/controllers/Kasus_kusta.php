@@ -8,6 +8,8 @@ class Kasus_kusta extends CI_Controller
         parent::__construct();
         if (!$this->session->userdata('username')) {
             redirect('auth');
+        } elseif ($this->session->userdata('levelUser') !== 'Pegawai') {
+            redirect('auth/blokir');
         }
         $this->load->model('M_kasuskusta');
         $this->load->library('form_validation');

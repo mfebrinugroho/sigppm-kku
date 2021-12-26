@@ -149,6 +149,13 @@ class M_kasuskusta extends CI_model
 
         (kus15LPB + kus15PPB + kus1625LPB + kus1625PPB + kus2635LPB + kus2635PPB +
         kus3645LPB + kus3645PPB + kus4655LPB + kus4655PPB + kus56LPB + kus56PPB) as pb,
+
+        kus15LMB, kus15PMB, kus15LPB, kus15PPB,
+        kus1625LMB, kus1625PMB, kus1625LPB, kus1625PPB, 
+        kus2635LMB, kus2635PMB, kus2635LPB, kus2635PPB,
+        kus3645LMB, kus3645PMB, kus3645LPB, kus3645PPB, 
+        kus4655LMB, kus4655PMB, kus4655LPB, kus4655PPB,
+        kus56LMB, kus56PMB, kus56LPB, kus56PPB,
         
         (kusta_baruPB + kusta_baruMB) as kasus_baru,
         (sembuhPB + sembuhMB) as sembuh,

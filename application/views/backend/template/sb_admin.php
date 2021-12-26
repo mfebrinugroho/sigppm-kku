@@ -25,3 +25,17 @@
         <span> Data User </span>
     </a>
 </li>
+
+<li class="menu-title">MENU</li>
+<li class="has_sub">
+    <a href="#" class="waves-effect"><i class="mdi mdi-map-marker-multiple"></i> <span> Pemetaan </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+    <ul class="list-unstyled">
+        <li><a href="<?= site_url('pemetaan/malaria') ?>">Malaria</a></li>
+    </ul>
+    <ul class="list-unstyled">
+        <li><a href="<?= site_url('pemetaan/dbd') ?>">DBD</a></li>
+    </ul>
+    <ul class="list-unstyled">
+        <li><a href="<?= site_url('pemetaan/kusta') ?>">Kusta</a></li>
+    </ul>
+</li>

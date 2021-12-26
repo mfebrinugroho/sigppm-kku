@@ -12,11 +12,99 @@
 
     <?php
     foreach ($pemetaan as $pmt) {
+        $laki = $pmt['mal011L'] + $pmt['mal14L'] + $pmt['mal59L'] + $pmt['mal1014L'] + $pmt['mal1564L'] + $pmt['mal65L'];
+
+        $data[$pmt['nama']] = $laki;
+    }
+    ?>
+    var LAKILAKI = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
+        $perempuan = $pmt['mal011P'] + $pmt['mal14P'] + $pmt['mal59P'] + $pmt['mal1014P'] + $pmt['mal1564P'] + $pmt['mal65P'];
+
+        $data[$pmt['nama']] = $perempuan;
+    }
+    ?>
+    var PEREMPUAN = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
+        $mal011 = $pmt['mal011L'] + $pmt['mal011P'];
+
+        $data[$pmt['nama']] = $mal011;
+    }
+    ?>
+    var MAL011 = <?= json_encode($data) ?>;
+    
+    <?php
+    foreach ($pemetaan as $pmt) {
+        $mal14 = $pmt['mal14L'] + $pmt['mal14P'];
+
+        $data[$pmt['nama']] = $mal14;
+    }
+    ?>
+    var MAL14 = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
+        $mal59 = $pmt['mal59L'] + $pmt['mal59P'];
+
+        $data[$pmt['nama']] = $mal59;
+    }
+    ?>
+    var MAL59 = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
+        $mal1014 = $pmt['mal1014L'] + $pmt['mal1014P'];
+
+        $data[$pmt['nama']] = $mal1014;
+    }
+    ?>
+    var MAL1014 = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
+        $mal1564 = $pmt['mal1564L'] + $pmt['mal1564P'];
+
+        $data[$pmt['nama']] = $mal1564;
+    }
+    ?>
+    var MAL1564 = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
+        $mal65 = $pmt['mal65L'] + $pmt['mal65P'];
+
+        $data[$pmt['nama']] = $mal65;
+    }
+    ?>
+    var MAL65 = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
 
         $data[$pmt['nama']] = $pmt['malaria_positif'];
     }
     ?>
     var POSITIF = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
+
+        $data[$pmt['nama']] = $pmt['malaria_klinis'];
+    }
+    ?>
+    var SUSPEK = <?= json_encode($data) ?>;
+
+    <?php
+    foreach ($pemetaan as $pmt) {
+
+        $data[$pmt['nama']] = number_format($pmt['jumlahPenduduk'], 0, '', '.');
+    }
+    ?>
+    var JML_PENDUDUK = <?= json_encode($data) ?>;
 
     // Peta Dasar Koordinat tengah KKKU [-1.1505796, 109.5429503]
     var map = L.map('mapMalaria').setView([-1.1505796, 109.5429503], 9);
@@ -42,8 +130,22 @@
 
     info.update = function(props) {
         this._div.innerHTML = '<h4>Annual Parasite Incidence</h4>' + (props ?
-            '<b>' + props.KECAMATAN + '</b><br/><br/> Kasus Positif = ' + POSITIF[props.KECAMATAN] + ' Jiwa' +
-            '<br/> API = ' + PERHITUNGAN[props.KECAMATAN] + ' / 1.000 Penduduk':
+            '<br><b>Kecamatan : </b>' + props.KECAMATAN + 
+            '<br><b>Jumlah Penduduk :</b> ' + JML_PENDUDUK[props.KECAMATAN] + ' Jiwa' +
+            '<br><b>Suspek Malaria :</b> ' + SUSPEK[props.KECAMATAN] + ' Jiwa' +
+            '<br><b>Kasus Positif :</b> ' + POSITIF[props.KECAMATAN] + ' Jiwa' + 
+            '<br><b>&mdash; Berdasarkan Jenis Kelamin &mdash;</b>' +
+            '<br>&bull; Laki-Laki : ' + LAKILAKI[props.KECAMATAN] + ' Jiwa' +
+            '<br>&bull; Perempuan : ' + PEREMPUAN[props.KECAMATAN] + ' Jiwa' +
+            '<br><b>&mdash; Berdasarkan Umur &mdash;</b>' +
+            '<br>&bull; 0 - 11 bulan  : ' + MAL011[props.KECAMATAN] + ' Jiwa' +
+            '<br>&bull; 1 - 4 tahun : ' + MAL14[props.KECAMATAN] + ' Jiwa' +
+            '<br>&bull; 5 - 9 tahun : ' + MAL59[props.KECAMATAN] + ' Jiwa' +
+            '<br>&bull; 10 - 14 tahun : ' + MAL1014[props.KECAMATAN] + ' Jiwa' +
+            '<br>&bull; 15 - 64 tahun : ' + MAL1564[props.KECAMATAN] + ' Jiwa' +
+            '<br>&bull; Lebih dari 65 tahun : ' + MAL65[props.KECAMATAN] + ' Jiwa' +
+
+            '<br><br><b>API :</b> ' + PERHITUNGAN[props.KECAMATAN] + ' / 1.000 Penduduk':
             'Arahkan kursor untuk melihat');
     };
 

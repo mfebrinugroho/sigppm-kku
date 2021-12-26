@@ -62,15 +62,12 @@
                                                         </td>
                                                         <td>
                                                             <div class="btn-group">
-                                                            <?php if ($usr['username'] == $user['username']) : ?>
+                                                            <?php if ($usr['levelUser'] == 'Admin') : ?>
                                                                 <a href="<?= site_url(); ?>user/lihat/<?= $usr['id'] ?>" class="btn btn-success btn-sm mr-1" data-toggle="tooltip" data-placement="top" title="Lihat Data">
                                                                     <i class="fa fa-eye"></i>
                                                                 </a>
                                                                 <a href="<?= site_url(); ?>user/ubah/<?= $usr['id'] ?>" class="btn btn-warning btn-sm mr-1" data-toggle="tooltip" data-placement="top" title="Ubah Data">
                                                                     <i class="fa fa-edit"></i>
-                                                                </a>
-                                                                <a href="<?= site_url(); ?>user/reset_password/<?= $usr['id'] ?>" class="btn btn-info btn-sm mr-1" data-toggle="tooltip" data-placement="top" title="Reset Password">
-                                                                    <i class="fa fa-key"></i>
                                                                 </a>
                                                             <?php else : ?>
                                                                 <a href="<?= site_url(); ?>user/lihat/<?= $usr['id'] ?>" class="btn btn-success btn-sm mr-1" data-toggle="tooltip" data-placement="top" title="Lihat Data">
