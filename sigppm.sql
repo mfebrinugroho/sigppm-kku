@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 21 Agu 2021 pada 11.06
+-- Waktu pembuatan: 05 Jan 2022 pada 07.15
 -- Versi server: 10.4.19-MariaDB
 -- Versi PHP: 7.3.28
 
@@ -69,7 +69,8 @@ INSERT INTO `jumlah_penduduk` (`id`, `tahun`, `idKecamatan`, `jumlah`) VALUES
 (80, '2017', 45, 32565),
 (81, '2017', 46, 21601),
 (82, '2017', 47, 11551),
-(83, '2017', 44, 3511);
+(83, '2017', 44, 3511),
+(84, '2014', 42, 4000);
 
 -- --------------------------------------------------------
 
@@ -454,7 +455,7 @@ INSERT INTO `kasus_kusta` (`id`, `idPenduduk`, `idPenyakit`, `kus15LMB`, `kus15P
 (28, 46, 3, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 4, 0, 6, 0, 0),
 (29, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 4, 0, 0, 0, 1, 0, 0, 0, 0, 5, 0, 7, 0, 0),
 (30, 55, 3, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 3, 0, 0),
-(31, 56, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0),
+(31, 56, 3, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0),
 (32, 57, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (33, 58, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (34, 59, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 4, 0, 0),
@@ -521,13 +522,13 @@ INSERT INTO `kasus_malaria` (`id`, `idPenduduk`, `idPenyakit`, `malaria_klinis`,
 (22, 43, 2, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (23, 44, 2, 113, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (24, 45, 2, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(25, 46, 2, 354, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0),
+(25, 46, 2, 354, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 100, 0, 0, 0, 0),
 (26, 47, 2, 118, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(31, 55, 2, 298, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0),
+(31, 55, 2, 298, 78, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 78, 1, 78, 0, 0, 0, 0),
 (32, 56, 2, 110, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0),
 (33, 57, 2, 1435, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0),
 (34, 58, 2, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(35, 59, 2, 98, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(35, 59, 2, 98, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 0, 0, 0, 0, 0),
 (36, 60, 2, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (50, 71, 2, 12, 1, 0, 0, 0, 0, 1, 0, 1, 2, 0, 0, 0, 1, 4, 3, 1, 0, 0, 1, 2),
 (51, 74, 2, 1768, 0, 0, 1, 0, 3, 0, 1, 0, 2, 0, 0, 0, 7, 0, 5, 0, 0, 0, 2, 0),
@@ -541,7 +542,8 @@ INSERT INTO `kasus_malaria` (`id`, `idPenduduk`, `idPenyakit`, `malaria_klinis`,
 (59, 82, 2, 362, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (60, 80, 2, 335, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0),
 (61, 79, 2, 263, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(62, 81, 2, 197, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0);
+(62, 81, 2, 197, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0),
+(63, 84, 2, 5000, 2, 0, 0, 0, 0, 0, 0, 0, 3, 2, 0, 0, 2, 5, 7, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -612,7 +614,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `password`, `nama`, `gambar`, `alamat`, `levelUser`, `status`) VALUES
 (10, 'admin', '$2y$10$5K7CjCPX12R3vcX2q/LO5OYySO3W4ZUHlusTkM8DzTMnwsV75XhIW', 'John Doe', 'john_doe.png', 'Jl. Ampera, Komp. Ampera Indah, No.223', 'Admin', 'Aktif'),
-(40, 'pegawai', '$2y$10$x2IKc33y3dbXV7eUp0SQ7eoDK46EVwvn6KQS97MUUpsoUNdvd/To.', 'Jane Doe', 'jane_doe.png', 'Jalan RE Martadinata, Komp. Pemda, Jalur F, No. 333', 'Pegawai', 'Aktif');
+(46, 'pegawai', '$2y$10$fe2rVSrQ8.VE/lDoECCU/uEgaR3RqjkxhBUyb/Aq1fcerQLcN0/Y2', 'Mikael', 'serti.PNG', 'Ampera', 'Pegawai', 'Aktif');
 
 --
 -- Indexes for dumped tables
@@ -675,7 +677,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `jumlah_penduduk`
 --
 ALTER TABLE `jumlah_penduduk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
 
 --
 -- AUTO_INCREMENT untuk tabel `kasus_dbd`
@@ -693,7 +695,7 @@ ALTER TABLE `kasus_kusta`
 -- AUTO_INCREMENT untuk tabel `kasus_malaria`
 --
 ALTER TABLE `kasus_malaria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
 -- AUTO_INCREMENT untuk tabel `kecamatan`
@@ -711,7 +713,7 @@ ALTER TABLE `penyakit`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
